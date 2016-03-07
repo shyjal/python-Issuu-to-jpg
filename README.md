@@ -12,7 +12,4 @@ eg : python issuu.py 0/33964045
 ### Working
 Downloading jpg images from 
 
-[http://image.issuu.com/<unique documentid>/jpg/page_<num>.jpg](http://www.issuu.com)
-
-
-
+image.issuu.com/<unique documentid>/jpg/page_<num>.jpg
