@@ -3,7 +3,6 @@ from os import path
 from os import makedirs
 from bs4 import BeautifulSoup
 import urllib.request
-import re
 import json
 import sys
 
@@ -11,8 +10,8 @@ import sys
 configid = '0/33964045'
 
 if(len(sys.argv) > 0):
-	configid=str(sys.argv[0])
-	
+	configid=str(sys.argv[1])
+
 issuuSoup = BeautifulSoup(urlopen("http://e.issuu.com/embed/"+configid+".json?v=1.0.0").read())
 
 jsonData=json.loads(str(issuuSoup))
